@@ -8,14 +8,22 @@ data class Producto(val nombre: String, val categoria: String, var seleccionado:
 class CompraViewModel : ViewModel() {
     // Lista maestra de productos
     val listaProductos = mutableStateListOf(
+        Producto("Platano", "Frutas"),
         Producto("Manzana", "Frutas"),
-        Producto("Plátano", "Frutas"),
-        Producto("Zanahoria", "Verduras"),
-        Producto("Brócoli", "Verduras"),
+        Producto("Naranja", "Frutas"),
+        Producto("Uva", "Frutas"),
+        Producto("Lechuga", "Verduras"),
+        Producto("Espinaca", "Verduras"),
+        Producto("Brocoli", "Verduras"),
+        Producto("Berenjena", "Verduras"),
         Producto("Jabón", "Higiene"),
         Producto("Shampoo", "Higiene"),
+        Producto("Desodorante", "Higiene"),
+        Producto("Pasta dental", "Higiene"),
         Producto("Arroz", "Cereales"),
-        Producto("Avena", "Cereales")
+        Producto("Avena", "Cereales"),
+        Producto("Trigo", "Cereales"),
+        Producto("Maíz", "Cereales")
     )
 
     // Categorías disponibles
